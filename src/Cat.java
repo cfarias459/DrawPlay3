@@ -34,33 +34,33 @@ public class Cat {
 		int y=catY;
 		
 		// Draw the head
-		g2.setColor(Color.BLACK);
+		g2.setColor(Color.PINK);
 		g2.fillOval(x, y, HEAD_DIMENSION, HEAD_DIMENSION);
 		// Draw the eyes
-		g2.setColor(Color.WHITE);
+		g2.setColor(Color.BLACK);
 		x = catX + EYE_X; 
 		y = catY + EYE_Y;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		x += EYE_SEPARATION;
 		g2.fillOval(x, y, EYE_WIDTH, EYE_HEIGHT);
 		// Draw the mouth
-		g2.setColor(Color.GRAY);
+		g2.setColor(Color.RED);
 		x = catX + MOUTH_X;
 		y = catY + MOUTH_Y;
 		g2.fillOval(x, y, MOUTH_WIDTH, MOUTH_HEIGHT);
 		g2.setColor(Color.black);
 		// Draw Ears
-		g2.setColor(Color.orange);
+		/*g2.setColor(Color.orange);
 		x = catX + EAR_X; 
 		y = catY + EAR_Y;
 		g2.fillOval(x, y, EAR_WIDTH, EAR_HEIGHT);
 		x += EYE_SEPARATION;
-		g2.fillOval(x, y, EAR_WIDTH, EAR_HEIGHT);
+		g2.fillOval(x, y, EAR_WIDTH, EAR_HEIGHT);*/
 		
 		
 		
 		// Meow text appears below cat head, +10 places below 
 		// so it doesn't overlap the drawing
-		g2.drawString("yass work, yass work, yass work.", catX, catY+HEAD_DIMENSION+10);	
+		g2.drawString("POYO!!!", catX, catY+HEAD_DIMENSION+10);	
 	}
 }
